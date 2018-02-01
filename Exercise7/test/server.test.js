@@ -13,5 +13,14 @@ describe('Rendering templates',()=>{
         })
        
     })
-   
+    test('Invalid request',(done)=>{
+        const options = {
+            method:'GET',
+            url : '/dwdsd'
+        }   
+        server.inject(options,(response)=>{
+            expect(response.statusCode).toBe(404);
+            done();
+        });
+        })
 });
