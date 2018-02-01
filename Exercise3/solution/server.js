@@ -14,7 +14,7 @@ if(!module.parent){
         if(err){
             throw err;
         } 
-        console.log("Serever started")
+        console.log("Server started")
     }
 )
 }
