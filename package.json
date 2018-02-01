@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest /Users/surabhigupta/makemehapi/Exercise2/test/server.test."
+    "test": "jest /Users/surabhigupta/makemehapi/Exercise3/test/server.test.js"
   },
   "author": "",
+  
   "license": "ISC",
   "devDependencies": {
     "eslint": "^4.16.0",
