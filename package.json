@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest /Users/surabhigupta/makemehapi/Exercise4/test/server.test.js"
+    "test": "jest /Users/surabhigupta/makemehapi/Exercise5/test/server.test.js"
   },
   "author": "",
   "license": "ISC",
@@ -18,8 +18,10 @@
     "jest": "^22.1.4"
   },
   "dependencies": {
+    "handlebars": "^4.0.11",
     "hapi": "^16.6.2",
     "inert": "^4.2.1",
-    "read-dir-files": "^0.1.1"
+    "read-dir-files": "^0.1.1",
+    "vision": "^4.1.1"
   }
 }
