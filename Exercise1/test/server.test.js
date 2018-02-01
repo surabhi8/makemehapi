@@ -12,5 +12,16 @@ describe('Routes',()=>{
         })
        
     })
+    test('Should return right response',(done)=>{
+        const options = {
+            method:'GET',
+            url : '/'
+        }
+        server.inject(options,(response)=>{
+            expect(response.payload).toBe('Hello Hapi');
+            done();
+        })
+       
+    })
 
 })
