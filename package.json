@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest /Users/surabhigupta/makemehapi/Exercise3/test/server.test.js"
+    "test": "jest /Users/surabhigupta/makemehapi/Exercise4/test/server.test.js"
   },
   "author": "",
   
