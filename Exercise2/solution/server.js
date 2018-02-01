@@ -3,7 +3,7 @@ const Hapi =  require('hapi')
 const routes = require('./routes/index.js')
 const server = new  Hapi.Server
 server.connection({
-    host: 'localhost',
+    host: '127.0.0.1',
     port: 8080,
   });
 
