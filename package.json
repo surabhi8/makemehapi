@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "jest /Users/surabhigupta/makemehapi/Exercise1/test/server.test."
   },
   "author": "",
   "license": "ISC",
