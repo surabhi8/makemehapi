@@ -23,4 +23,16 @@ describe('Rendering templates',()=>{
             done();
         });
         })
+        test('Should return right response',(done)=>{
+            const options = {
+                method:'GET',
+                url :'http://localhost:8080?/?name=Helping&suffix=!'
+            }   
+            let result = fs.readFileSync('/Users/surabhigupta/makemehapi/Exercise7/solution/templates/expected.html')
+            server.inject(options,(response)=>{
+                expect(response.result).toBe(result.toString());
+                done();
+            })
+           
+        })
 });
