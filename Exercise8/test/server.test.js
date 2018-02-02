@@ -12,5 +12,15 @@ describe('Routes',()=>{
         })
        
     })
-
+    test('Should return right response',(done)=>{
+        const options = {
+            method:'GET',
+            url : '/'
+        }
+        server.inject(options,(response)=>{
+            expect(response.result).toBe('Gur Chefhvg bs Uncv-arff');
+            done();
+        })
+       
+    })
 })
