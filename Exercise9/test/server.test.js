@@ -12,5 +12,16 @@ describe('Validation',()=>{
         })
        
     })
-  
+    test('Should return right response',(done)=>{
+        const options = {
+            method:'GET',
+            url : '/a/path/chickens/breed'
+        }
+        server.inject(options,(response)=>{
+            expect(response.result).toMatch('You are validated');
+            done();
+        })
+       
+    })
+
 })
