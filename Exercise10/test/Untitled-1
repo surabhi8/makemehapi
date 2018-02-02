@@ -1,0 +1,23 @@
+  test('Should return right status code',(done)=>{
+        const options = {
+            method:'GET',
+            url : '/a/path/chickens/breed'
+        }
+        server.inject(options,(response)=>{
+            expect(response.result).toMatch('You are validated');
+            done();
+        })
+       
+    })
+
+    test('Invalid Request',(done)=>{
+        const options = {
+            method:'GET',
+            url : '/a/path/chickens'
+        }
+        server.inject(options,(response)=>{
+            expect(response.statusCode).toBe(404);
+            done();
+        })
+       
+    })
