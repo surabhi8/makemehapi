@@ -23,5 +23,17 @@ describe('Validation',()=>{
         })
        
     })
+    test('Invalid Request',(done)=>{
+        const options = {
+            method:'GET',
+            url : '/a/path/chickens'
+        }
+        server.inject(options,(response)=>{
+            expect(response.statusCode).toBe(404);
+            done();
+        })
+       
+    })
+
 
 })
